@@ -1,0 +1,26 @@
+# dependencies
+node_modules
+
+# next.js
+.next/
+out/
+build/
+
+# production data (demo app local store)
+.data/
+
+# env
+.env
+.env.local
+.env*.local
+
+# logs
+*.log
+npm-debug.log*
+
+# turbo
+.turbo
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

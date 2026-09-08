@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 9%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 13% 11%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 13% 11%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 152 76% 44%;
+    --primary-foreground: 220 13% 9%;
+
+    --secondary: 220 13% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 13% 16%;
+    --muted-foreground: 220 8% 65%;
+
+    --accent: 220 13% 18%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 152 76% 44%;
+
+    --radius: 0.625rem;
+
+    --piper: 152 76% 44%;
+    --piper-foreground: 220 13% 9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html,
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
+  }
+  /* Tailwind v3 keeps cursor:pointer on buttons, but we still respect the project rule. */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  summary,
+  a[href] {
+    cursor: pointer;
+  }
+}
